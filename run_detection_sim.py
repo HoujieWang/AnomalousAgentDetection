@@ -3,8 +3,10 @@
 
 # In[1]:
 ''' 
-    This file differs from run_detection_2.py as being a DCC runnable file.
-    
+    This file reads ONE agent location series, as clustered space zones and group-level forecasts as part of the features.
+    Then it fits the individual-level DBCM model to learn space-time pattern of the agent, 
+    inject possibly regime shift of some agents, calibrate Bayes factor thresholds of regime shift, 
+    and finally determine if the agent indeed has a regime shift.    
 '''
 
 import Utilities2025.geo_utilities as mygeo
